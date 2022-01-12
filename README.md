@@ -33,8 +33,8 @@ A small personal gallery project
 - HTML
 - CSS
 
+
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- TwitchTV [devPabloWinter](https://www.twitch.tv/devpablowinter)
+- Linkedin [Pablo Winck Winter](https://www.linkedin.com/in/pablowinck/)
