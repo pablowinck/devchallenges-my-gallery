@@ -1,0 +1,136 @@
+container {
+  height: 100vh;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 25rem auto 3rem;
+  grid-template-areas: "header" "main" "footer";
+  grid-gap: 3rem;
+}
+
+header {
+  grid-area: header;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1.5rem;
+}
+
+header #avatar {
+  height: 9.75rem;
+  width: 9.75rem;
+  border-radius: 1rem;
+  background: url("images/profilePhoto.png") no-repeat center;
+  background-size: cover;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+header h3 {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+header #text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+#cards {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--background-card);
+  width: 6.25rem;
+  height: 4.2rem;
+  border-radius: 0.75rem;
+
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1rem;
+}
+
+.card span {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  line-height: 1.375rem;
+}
+
+main {
+  grid-area: main;
+
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-areas:
+    "img1 img2 img2"
+    "img3 img3 img4"
+    "img5 img6 img4";
+  justify-content: center;
+  align-items: initial;
+
+  grid-gap: 1rem;
+}
+
+main .square {
+  border-radius: 12px;
+
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+main #img-1 {
+  grid-area: img1;
+  background: url("images/photo1.png");
+}
+
+main #img-2 {
+  grid-area: img2;
+  background: url("images/photo2.png");
+}
+
+main #img-3 {
+  grid-area: img3;
+  background: url("images/photo3.png");
+}
+
+main #img-4 {
+  grid-area: img4;
+  background: url("images/photo4.png");
+}
+
+main #img-5 {
+  grid-area: img5;
+  background: url("images/photo5.png");
+}
+
+main #img-6 {
+  grid-area: img6;
+  background: url("images/photo6.png");
+}
+
+footer {
+  grid-area: footer;
+  padding: 1rem;
+
+  text-align: center;
+}

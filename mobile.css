@@ -1,0 +1,21 @@
+@media (max-width: 960px) {
+  main {
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+  }
+
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 660px) {
+  main {
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+  }
+
+  html {
+    font-size: 10px;
+  }
+}
